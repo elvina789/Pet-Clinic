@@ -44,6 +44,7 @@ public class PetClinic {
 
         PetClinicPrinter printer = new PetClinicPrinter();
 
+        //  verify that the examinePet method works for both veterinarians
 
         for (Pet currentPet : pets) {
             System.out.println(generalVeterinarian.examinePet(currentPet));
@@ -52,7 +53,7 @@ public class PetClinic {
 
 
 
-        // Print details for each object
+        // Print details for each object verify if the pet and veterinarians methods work correctly
 
         printer.printDetails(dog);               // Print dog details
         printer.printDetails(cat);               // Print cat details
@@ -60,9 +61,10 @@ public class PetClinic {
         printer.printDetails(generalVeterinarian);        // Print general Veterinarian details
 
         // calling examinePet method for specialistVeterinarian
-        System.out.println(specialistVeterinarian.examinePet(dog));
+        System.out.println(specialistVeterinarian.examinePet(dog));  // Should return Specialist surgery examining Momo.
 
         // calling examinePet method for generalVeterinarian
-        System.out.println(generalVeterinarian.examinePet(dog));
+        System.out.println(generalVeterinarian.examinePet(dog));  // Should return General examining Momo, a Dog.
+
     }
 }

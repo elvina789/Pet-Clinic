@@ -22,6 +22,6 @@ public class GeneralVeterinarian implements Veterinarian {
 
     @Override
     public String examinePet(Pet pet) {
-        return "Examining " + pet.getName() + ", a " + pet.getSpecies() + ".";
+        return "General examining " + pet.getName() + ", a " + pet.getSpecies() + ".";
     }
 }
